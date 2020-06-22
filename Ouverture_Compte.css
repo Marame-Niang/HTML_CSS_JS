@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #E60000;
+  background-image:linear-gradient(90deg,white, black, #E60000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+.marquee{
+  color: #E60000;
+  background-color: white;
+  height: 70px;
+  position: fixed;
+}
+
+header{
+  position: fixed;
+}
+h5{
+  color: black;
+  margin-top: -5px;
+}
+img{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 30px 30px 30px;
+  
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+
+}
+ 
+.sidebar a.active {
+  background-color: #E60000;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.content 
+{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin-left: 200px; 
+  justify-content: space-between;
+  padding: 1px 16px;
+}
+
+.form{
+    width: 100%;
+    font-family: inherit;
+    margin: 10px;
+    margin-top: 70px;
+    color: black;
+}
+ main section{
+  border: 2px solid grey;
+  box-shadow: 2px 2px 2px 2px grey;
+  background-color: white;
+  text-align: center;
+ }
+
+ main section:nth-child(1){
+  height: 300px;
+ }
+
+.Physique{
+  height: 650px;
+  
+ }
+
+.Morale{
+  height: 350px;
+  } 
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+section img{
+  height: 40px;
+  width: 40px;
+  margin-left: 0px;
+}
+
+
+.element-top{
+    font-size: 30px;
+    padding-top: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+input{
+  margin-top: 20px;
+}
+
+input[type="text"],[type="email"]{
+    width: 50%;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px red;
+    padding-bottom: 10px;
+  }
+
+
+/* Médias queries*/
+
+@media screen and (max-width: 770px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    margin-top: -20px;
+    font-family: "Lato", sans-serif;
+    background-color: #E60000;
+    background-image:linear-gradient(90deg, #E60000, black,  white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+  .sidebar a {
+    float: left;
+    color: white;
+  }
+
+ .content {
+    flex-direction: column;
+    margin-left: 0px;
+    padding-top: 100px;
+    justify-content: left;
+  }
+
+  .element{
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+  .type-compte
+  {
+    padding: center;
+    color: black;
+  }
+
+  label{
+    color: black;
+  }
+
+  input[type: text]{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  span{
+    padding: center;
+  }
+
+}

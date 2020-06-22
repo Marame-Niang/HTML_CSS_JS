@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>TD HTML CSS JS</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="Ouverture_Compte.css"/>
+    <script src="Ouverture_Compte.js"></script>
+  </head>
+  <body>
+                                                                <!-- Entête de la page  -->     
+    <marquee class="marquee">
+      <h2> Bienvenue à la Banque du peuple </h2>
+    </marquee>
+    
+    <header>
+      <img alt="logo" src="logo.png"/> 
+      <h5>Banque du peuple</h3>
+                                                                  <!-- Le menu à gauche --> 
+      <nav class="sidebar">
+        <a class="" href="home.html">Home</a>
+        <a class="active" href="#Ouverture-Compte">Ouverture Compte</a>
+        <a href="#Fermeture-Compte">Fermeture Compte</a>
+        <a href="#Opération-bancaire">Opération bancaire</a>
+        <a href="#Opération-en-ligne">Opération en ligne</a>
+      </nav>
+    </header>
+
+    <main>
+      <form class="content" action="#" method="post">
+                                                                  <!-- Section Caractéristiques Compte --> 
+        <section class="form">
+          <div class="element-top">
+            <img src="image.jpeg">
+            <span>CARACTÉRISTIQUES DU COMPTE</span>
+            <img src="image.jpeg">
+          </div>
+
+            <div class="sous-element">
+                <label for="Nom"> Somme: *
+                  <input type="text" id="Adresse"  placeholder="Dakar, rue 21, avenue bourguiba">
+                </label>
+              </div>
+            <div class="sous-element"> 
+              <span class="type-compte">Type de Compte: *&nbsp;&thinsp;&thinsp; </span>
+              <label> Simple et Xeewel
+                <a href="#" onclick="affiche_liste1()">
+                  <input type="radio" name="Compte" value="Simple_Xeewel" id="Simple_Xeewel">
+                <a>
+              </label>
+              <div id="Liste1">
+                <select>
+                  <option onclick="add()" value="Actif" selected="selected">Actif</option>
+                  <option onclick="add()" value="Fermé">Fermé</option>
+                  <option onclick="add()" value="Bloqué">Bloqué</option> 
+                </select> 
+              </div>
+
+              <label>Courant
+                <a href="#" onclick="affiche_liste2()">
+                  <input type="radio" name="Compte" value="Courant" id="Courant">
+                <a> 
+              </label>
+              <div id="Liste2">
+                <select>
+                  <option onclick="add()" value="Actif" selected="selected">Actif</option>
+                  <option onclick="add()" value="Fermé">Fermé</option>
+                  <option onclick="add()" value="Bloqué">Bloqué</option> 
+                </select> 
+              </div>
+
+              <label>Bloqué
+                <a href="#" onclick="affiche_liste3()">
+                    <input type="radio" name="Compte" value="Bloqué" id="Bloqué"> 
+                <a> 
+              </label>
+              <div id="Liste3">
+                <select>
+                  <option onclick="add()" value="Actif" selected="selected">Actif</option>
+                  <option onclick="add()" value="Fermé">Fermé</option>
+                  <option onclick="add()" value="Bloqué">Bloqué</option> 
+                </select> 
+              </div>
+            </div>
+
+        </section> 
+
+        <section class="form"> 
+          <div class="element-top">
+            <img src="images.jpeg">
+                                                                                    <!-- Section Inforation Client --> 
+            <span> INFORMATION DU CLIENT</span>
+            <img src="images.jpeg" >
+          </div>
+                                                                                    <!-- Section Inforation Client Physique --> 
+          <section class="sous-section">
+            <div class="element-top">
+              <img src="images.jpeg">
+              <span><a href="#" onclick="affiche_physique()">CLIENT PHYSIQUE </a></span>
+              <img src="images.jpeg">
+            </div>
+
+            <div id="Physique">
+              <div class="sous-element">
+                <label for="Nom"> Prénom: *
+                  <input type="text" id="Adresse"  placeholder="Maramithiata">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Nom">&thinsp;&thinsp;&thinsp;&thinsp;&thinsp; Nom: *
+                  <input type="text"  placeholder="Niang">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Nom"> Adresse: *
+                  <input type="text" id="Adresse"  placeholder="Dakar, rue 21, avenue bourguiba">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Email">  &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;Email:  &thinsp;&thinsp;
+                  <input type="email" id="Email" placeholder="thiatatou@gmailcom">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Téléphone"> Télépho: *
+                 <input type="text" id="Téléphone"  placeholder="771234567">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Nom">&thinsp;&thinsp;&thinsp;&thinsp;Salaire: &thinsp;
+                  <input type="text" id="Salaire" placeholder="200 000 FCFA">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Nom">profession: 
+                  <input type="text" id="Salaire" placeholder="caissière">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="CIN">  &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&emsp;NIN: * 
+                  <input type="text" id="CIN" placeholder="1 000 00 000 00000">
+                </label>
+              </div>
+            </div>
+
+          </section>
+                                                                                        <!-- Section Inforation Client  --> 
+          <section class="sous-section">
+            <div class="element-top">
+              <img src="téléchargement.jpeg">
+              <span><a href="#" onclick="affiche_morale()" >CLIENT MORALE </a> </span>
+              <img src="téléchargement.jpeg">
+            </div>
+            <div id="Morale">
+              <div class="sous-element">
+                <label for="Nom"> &emsp; &emsp; &emsp; &nbsp;&nbsp;  Nom: *&nbsp;&nbsp;&emsp;
+                  <input type="text" placeholder="Nom">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Nom"> &emsp; &emsp;&emsp;Adresse: *&nbsp;&nbsp;&thinsp;&thinsp;
+                  <input type="text" id="Adresse" placeholder="Dakar, rue 21, avenue bourguiba">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Email">&emsp; &emsp; &emsp; &nbsp;  Email: &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;&thinsp;
+                  <input type="email" id="Email" placeholder="email@gmailcom">
+                </label>
+              </div>
+
+              <div class="sous-element">
+                <label for="Téléphone">&emsp;&nbsp;&nbsp;&nbsp; Téléphone: *&nbsp;&nbsp;&thinsp;&thinsp;&thinsp;
+                 <input type="text" id="Téléphone" placeholder="331234567">
+                </label>
+              </div>
+            </div>
+          </section>
+
+        </section>
+
+        <button type="submit"> Enregistrer </button>
+      <form/>
+         
+    </main>
+
+</body>
+</html>
