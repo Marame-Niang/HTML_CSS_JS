@@ -1,3 +1,4 @@
+                                    /*Le body*/
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -7,6 +8,7 @@ body {
   background-attachment: fixed;
   color: white;
 }
+                              /*L'enête de la page*/
 .marquee{
   color: #E60000;
   background-color: white;
@@ -27,6 +29,8 @@ img{
   border-radius: 30px 30px 30px 30px;
   
 }
+
+                                  /*La barre de navigation à gauche*/
 
 .sidebar {
   margin: 0;
@@ -54,6 +58,7 @@ img{
   color: white;
 }
 
+                                /*Le Formulaire */
 .content 
 {
   display: flex;
@@ -78,10 +83,48 @@ img{
   text-align: center;
  }
 
+                            /* Titre des parties*/
+ .element-top{
+    font-size: 30px;
+    padding-top: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+section img{
+  height: 40px;
+  width: 40px;
+  margin-left: 0px;
+}
+                    
+                    /* Les champs de saisi */
+input{
+  margin-top: 20px;
+}
+
+input[type="text"],[type="email"]{
+    width: 50%;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px red;
+    padding-bottom: 10px;
+  }
+                            /* Section Caractéristiques Compte */
  main section:nth-child(1){
-  height: 300px;
+  height: 500px;
  }
 
+ .Employeur{
+  text-align: center;
+ }
+
+ .RS{
+   margin-top: -30px;
+ }
+                            /* Section Information Client*/
 .Physique{
   height: 650px;
   
@@ -96,36 +139,20 @@ a{
   color:black;
 }
 
-section img{
-  height: 40px;
-  width: 40px;
-  margin-left: 0px;
+.bouton{
+    display: flex;
+    margin-left: 30%;
+    width: 500px;
+    
 }
-
-
-.element-top{
-    font-size: 30px;
-    padding-top: 5px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    border: 2px solid grey;
-    box-shadow: 2px 2px 2px 2px grey;
+button{
+  width: 50%;
+  height: 50px;
+  border: 2px solid;
+  font-size: 16px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 2px 2px red;
 }
-
-input{
-  margin-top: 20px;
-}
-
-input[type="text"],[type="email"]{
-    width: 50%;
-    height: 25px;
-    border: 2px solid white;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 2px 2px red;
-    padding-bottom: 10px;
-  }
-
 
 /* Médias queries*/
 
